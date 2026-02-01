@@ -12,6 +12,9 @@ description: 모든 기획 산출물의 저장 위치와 버전 관리 체계를
 - `outputs/roadmaps/`: 제품 로드맵
 - `outputs/market-reports/`: 시장 및 경쟁 분석 보고서
 - `outputs/blueprints/`: 데이터 모델 및 필드 정의서
+- `outputs/blueprints/`: 데이터 모델 및 필드 정의서
+- `outputs/web/{version}_{project_name}/`: 버전별 웹 구현 소스 (HTML, CSS, JS)
+- `outputs/web/{version}_{project_name}/assets/`: 해당 프로젝트 전용 에셋
 
 ### 🏷 버전 관리 규칙
 1. **날짜 기반 관리 (Reports/Roadmaps)**:

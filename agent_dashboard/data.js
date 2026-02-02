@@ -173,6 +173,13 @@ HTML/CSS 기반 레이아웃 목업 생성.`
 name: 3.2 Implementation Prompt
 ---
 최종 기획안 기반 실배포용 코드 구현.`
+        },
+        'reference-analysis': {
+            title: '1.3 레퍼런스 및 벤치마킹 분석 (Reference Analysis)',
+            content: `---
+name: 1.3 Reference Analysis
+---
+사용자가 제공한 섹션별 레퍼런스를 분석하여 최적의 디자인 패턴 도출.`
         }
     }
 };

@@ -7,6 +7,7 @@ description: 랜딩페이지 생산 워크플로우 (Landing Page Production) - 
 ### 실행 단계
 
 1. **1단계: 심층 조사 및 전략 수립**
+   - **Industry Analysis**: `1.0-industry-analysis` 스킬로 벨류체인과 시장 흐름을 심층 분석합니다.
    - **Deep Research**: `1.1-deep-research` 스킬을 사용하여 시장과 타겟을 분석합니다.
    - **LP Generation**: `1.2-generation-logic` 스킬을 사용하여 핵심 기획안을 도출합니다.
 

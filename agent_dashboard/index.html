@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Control Center - AI Agent Ecosystem Visualization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <span class="logo-icon">💠</span>
+                    <h1>Agent Control Center</h1>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="label">Total Agents</span>
+                        <span class="value" id="count-agents">2</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">Active Workflows</span>
+                        <span class="value" id="count-workflows">4</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">Atomic Skills</span>
+                        <span class="value" id="count-skills">16</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="agent-grid">
+            <!-- Web Service Planner Agent -->
+            <div class="agent-card" data-agent="planner">
+                <div class="agent-header">
+                    <div class="agent-title">
+                        <span class="tag">System</span>
+                        <h2>Web Service Planner Agent</h2>
+                        <p>비즈니스 목표 달성을 위한 전략 기획 및 기술 명세 자동화</p>
+                    </div>
+                </div>
+                <div class="workflow-list">
+                    <div class="workflow-group" onclick="toggleDetails('planner-w1')">
+                        <div class="workflow-info">
+                            <span class="wf-icon">🎙️</span>
+                            <h3>보이스 투 백로그 (Voice-to-Backlog)</h3>
+                        </div>
+                        <div class="wf-steps">
+                            <span class="skill-chip">인식</span>
+                            <span class="skill-chip">계획</span>
+                            <span class="skill-chip">작성</span>
+                            <span class="skill-chip">티켓분해</span>
+                        </div>
+                        <button class="view-prompt-btn"
+                            onclick="event.stopPropagation(); showPrompt('workflows', 'voice-to-backlog')">View
+                            Prompt</button>
+                    </div>
+                    <div class="workflow-details" id="planner-w1">
+                        <ul>
+                            <li><strong>Used Skills:</strong></li>
+                            <li>- discovery-synthesis</li>
+                            <li>- requirement-drafting</li>
+                            <li>- output-versioning-guide</li>
+                        </ul>
+                    </div>
+
+                    <div class="workflow-group" onclick="toggleDetails('planner-w2')">
+                        <div class="workflow-info">
+                            <span class="wf-icon">🛠️</span>
+                            <h3>AI 최적화 사양 정의 (AI-Optimized Spec)</h3>
+                        </div>
+                        <div class="wf-steps">
+                            <span class="skill-chip">기술적분해</span>
+                            <span class="skill-chip">설계도작성</span>
+                            <span class="skill-chip">사양검증</span>
+                        </div>
+                        <button class="view-prompt-btn"
+                            onclick="event.stopPropagation(); showPrompt('workflows', 'ai-optimized-spec')">View
+                            Prompt</button>
+                    </div>
+                    <div class="workflow-details" id="planner-w2">
+                        <ul>
+                            <li><strong>Used Skills:</strong></li>
+                            <li>- technical-blueprinting</li>
+                            <li>- risk-edge-case</li>
+                            <li>- output-versioning-guide</li>
+                        </ul>
+                    </div>
+
+                    <div class="workflow-group" onclick="toggleDetails('planner-w3')">
+                        <div class="workflow-info">
+                            <span class="wf-icon">📈</span>
+                            <h3>시장 적응형 로드맵 관리 (Market-Adaptive)</h3>
+                        </div>
+                        <div class="wf-steps">
+                            <span class="skill-chip">모니터링</span>
+                            <span class="skill-chip">로드맵최적화</span>
+                        </div>
+                        <button class="view-prompt-btn"
+                            onclick="event.stopPropagation(); showPrompt('workflows', 'market-adaptive-roadmapping')">View
+                            Prompt</button>
+                    </div>
+                    <div class="workflow-details" id="planner-w3">
+                        <ul>
+                            <li><strong>Used Skills:</strong></li>
+                            <li>- market-intelligence</li>
+                            <li>- priority-scoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landing Page Agent -->
+            <div class="agent-card" data-agent="landing">
+                <div class="agent-header">
+                    <div class="agent-title">
+                        <span class="tag">Marketing</span>
+                        <h2>Landing Page Agent</h2>
+                        <p>시장 조사부터 고성능 랜딩페이지 코드 구현까지의 수직적 통합</p>
+                    </div>
+                </div>
+                <div class="workflow-list">
+                    <div class="workflow-group active" onclick="toggleDetails('landing-w1')">
+                        <div class="workflow-info">
+                            <span class="wf-icon">🚀</span>
+                            <h3>랜딩페이지 생산 워크플로우 (Production)</h3>
+                        </div>
+                        <div class="wf-steps-full">
+                            <!-- ... -->
+                        </div>
+                        <button class="view-prompt-btn"
+                            onclick="event.stopPropagation(); showPrompt('workflows', 'landing-page-production')">View
+                            Prompt</button>
+                    </div>
+                    <div class="workflow-details open" id="landing-w1">
+                        <ul>
+                            <li><strong>Managed Skills:</strong></li>
+                            <li>- <code>landing-page-agent/</code> 하위 전담 스킬셋 9종</li>
+                            <li>- output-versioning-guide 연동</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Skills Pool -->
+        <section class="skills-pool">
+            <div class="section-title">
+                <h2>Global Atomic Skills Pool</h2>
+                <p>에이전트들이 공통으로 참조하거나 개별적으로 보유한 원자적 기능 단위들</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-box" onclick="showPrompt('skills', 'industry-analysis')">1.0 industry-analysis</div>
+                <div class="skill-box" onclick="showPrompt('skills', 'generation-logic')">1.2 generation-logic</div>
+                <div class="skill-box" onclick="showPrompt('skills', 'copy-optimization')">2.1 copy-optimization</div>
+                <div class="skill-box" onclick="showPrompt('skills', 'structure-template')">2.4 structure-template</div>
+                <div class="skill-box" onclick="showPrompt('skills', 'technical-blueprinting')">technical-blueprinting
+                </div>
+                <div class="skill-box">discovery-synthesis</div>
+                <div class="skill-box">requirement-drafting</div>
+                <div class="skill-box">risk-edge-case</div>
+                <div class="skill-box">priority-scoring</div>
+                <div class="skill-box system">output-versioning-guide</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Prompts -->
+    <div id="prompt-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Prompt Details</h2>
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <pre id="modal-content-text"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

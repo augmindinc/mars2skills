@@ -20,5 +20,5 @@ description: AI 최적화 사양 정의 (AI-Optimized Spec) - 에이전트가 �
 
 4. **Formatting (최종 출력)**
    - 에이전트가 읽기 가장 좋은 형식인 `.cursorrules` 또는 `SPEC.md` 파일 형태로 결과를 생성합니다.
-   - 산출물은 `outputs/specs/` 폴더 내에 `{vN}_{feature_name}_spec.md` 형식으로 저장하며, 변경 시마다 버전 번호(v1, v2...)를 상향하여 체계적으로 관리합니다.
-   - 구현해야 할 코드 스니펫이나 논리 순서를 명확히 포함합니다.
+   - 산출물은 `outputs/{project_name}/specs/` 폴더 내에 `{vN}_{feature_name}_spec.md` 형식으로 저장하며, 변경 시마다 버전 번호를 상향하여 관리합니다.
+   - 구현 코드(HTML, CSS, JS 등)는 `outputs/{project_name}/web/v{N}/` 폴더에 체계적으로 분리하여 저장합니다.

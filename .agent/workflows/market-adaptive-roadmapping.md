@@ -20,5 +20,5 @@ description: 시장 적응형 로드맵 관리 (Market-Adaptive Roadmapping) - �
 
 4. **Report (전략 보고)**
    - 변경 이유와 근거 데이터, 예상 효과를 포함한 전략 보고서를 작성합니다.
-   - 산출물은 `outputs/market-reports/` 및 `outputs/roadmaps/` 폴더 내에 날짜 기반 파일명(`yyyy-mm-dd_report.md`, `yyyy-mm-dd_roadmap.md`)으로 저장하여 히스토리를 체계적으로 관리합니다.
+   - 산출물은 `outputs/{project_name}/market-reports/` 및 `outputs/{project_name}/roadmaps/` 폴더 내에 날짜 기반 파일명으로 저장하여 히스토리를 체계적으로 관리합니다.
    - 사람 기획자가 최종 의사결정을 내릴 수 있도록 정보를 시각화하여 전달합니다.

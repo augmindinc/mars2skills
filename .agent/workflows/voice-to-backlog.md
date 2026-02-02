@@ -16,12 +16,12 @@ description: 보이스 투 백로그 (Voice-to-Backlog) - 미팅 녹취록을 �
 
 3. **Act: Drafting (PRD 작성)**
    - `requirement-drafting` 스킬을 사용하여 PRD 초안을 작성하거나 업데이트합니다.
-   - 산출물은 `outputs/prds/` 폴더 내에 `{yyyy-mm-dd}_{feature_name}_prd.md` 형식으로 저장합니다.
+   - 산출물은 `outputs/{project_name}/prds/` 폴더 내에 `{yyyy-mm-dd}_{feature_name}_prd.md` 형식으로 저장합니다.
 
 4. **Act: Decomposition (티켓 분해)**
    - 업데이트된 PRD를 기반으로 구체적인 사용자 스토리(User Story)와 수락 기준(Acceptance Criteria)을 도출합니다.
-   - 산출물은 프로젝트 폴더 내 `outputs/backlogs/`에 `{yyyy-mm-dd}_{feature_name}_backlog.md` 형식으로 저장합니다.
+   - 산출물은 `outputs/{project_name}/backlogs/` 폴더 내에 `{yyyy-mm-dd}_{feature_name}_backlog.md` 형식으로 저장합니다.
 
 5. **Learn/Review (검토 및 승인)**
    - 생성된 티켓의 논리적 일관성과 상세도를 검토합니다.
-   - 기획자에게 최종 결과물을 제시하고 피드백 및 승인을 요청하며, 승인된 최종본은 `_final` 접미사 또는 별도의 `release/` 폴더로 관리하여 버전 관리합니다.
+   - 기획자에게 최종 결과물을 제시하고 피드백 및 승인을 요청하며, 승인된 최종본은 파일명 끝에 `_final`을 붙여 버전 관리합니다.
